@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "YBLEHelper"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A small library that will help you work with BLU technology on iOS."
 
   # This description is used to generate tags and improve search results.

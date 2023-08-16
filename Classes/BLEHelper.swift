@@ -76,7 +76,7 @@ public class BLE: NSObject {
     /// The central bluetooth manager
     private var centralManager: CBCentralManager?
     /// The queue, on which will compute all ble tasks
-    private let queue = DispatchQueue(label: "com.macq.qsenseair.ble.bleQueue", qos: .utility)
+    private let queue = DispatchQueue(label: "com.ya.blehelper.bleQueue", qos: .utility)
     /// Array of all characteristics in connected peripheral
     private var characteristics: [CBCharacteristic] = []
     
@@ -214,6 +214,7 @@ public class BLE: NSObject {
                 else { return }
                 if log == exp || log.contains(exp) {
                     completion(.success(value))
+                    isCompleted = true
                     self?.cancellable.forEach { $0.cancel() }
                 }
             }
