@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "BLEHelper"
+  spec.name         = "YBLEHelper"
   spec.version      = "0.0.1"
   spec.summary      = "A small library that will help you work with BLU technology on iOS."
 
@@ -90,10 +90,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes/**/*"
+  spec.source_files  = "**/*"
   # spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "Classes/*.h"
+  spec.public_header_files = "**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
